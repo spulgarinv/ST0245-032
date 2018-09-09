@@ -2,7 +2,7 @@
 import java.util.Arrays;
 
 /**
- * @author Juan Camilo Guerrero Alarcon && Santiago Pulgarin Vazques
+ * @author Juan Camilo Guerrero Alarcon && Santiago Pulgarin Vasquez
  */
 public class Punto1 {
 
