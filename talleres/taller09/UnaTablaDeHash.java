@@ -47,17 +47,23 @@ public class UnaTablaDeHash
    * Este método se utiliza para obtener el elmento con la clave k, se enlaza con funcionHash
    */
    public int get(String k){
-       int laFuncionHashDeK =  funcionHash(k);
-       return tabla.get();
-   }
-
-   /**
+    int laFuncionHashDeK =  funcionHash(k);
+    LinkedList<Pair<String,Integer>> valor = tabla.get(laFuncionHashDeK);
+    Pair<String, Integer> pair = valor.get(laFuncionHashDeK);
+    
+    return pair.getValue();
+  }
+  
+  /**
    * @param k es la llave del elemento que servirá como referencia al buscar posteriormente
    * @param v es el valor asociado a la llave k
    * Este método se utiliza para agregar un nuevo elemento
    */
-   public void put(String k, int v){
-         int laFuncionHashDeK =  funcionHash(k);
-         tabla[laFuncionHashDeK] = v;
-   }
+  public void put(String k, int v){
+    int laFuncionHashDeK =  funcionHash(k);
+    Pair<String,Integer> pair = new Pair<>(k,laFuncionHashDeK);
+    LinkedList<Pair<String,Integer>> valor = new LinkedList<>();
+    valor.add(pair);
+    tabla.add(valor);
+  }
 }
