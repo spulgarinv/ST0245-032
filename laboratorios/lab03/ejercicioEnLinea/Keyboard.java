@@ -2,7 +2,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 /**
- * @author Juan Camilo Guerrero && Sanriago Pulgarin
+ * @author Juan Camilo Guerrero && Santiago Pulgarin
  */
 
 public class Keyboard {
