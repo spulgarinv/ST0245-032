@@ -44,11 +44,11 @@ public class BinaryTree {
         }
         if (n > node.data) {
             if (node.right == null) {
-                insertarAux(node.right,n);
-            }
+                node.rigth == new Node(n);
+            }else {
+	    	insertarAux(node.rigth,n);
+	    }
         }
-        
-        
     }
 
     /**
