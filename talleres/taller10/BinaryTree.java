@@ -21,6 +21,9 @@ public class BinaryTree {
 	*
 	*/
     public void insertar(int n) {
+        if (node == null){
+            root = new Node (n);
+        }   
         insertarAux(root, n);   
     }
     
@@ -31,9 +34,7 @@ public class BinaryTree {
 	* Inserta un dato respetando claro las desigualdades en el árbol
 	*/
     private void insertarAux(Node node, int n) {
-        if (node == null){
-            root = new Node (n);
-        }
+       
         if (n < node.data) {
             if (node.left == null) {
                 node.left = new Node(n);
