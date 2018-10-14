@@ -42,26 +42,6 @@ public class BinaryTree {
      * Ejecicio 1.2
      *
      */
-
-    public static void grandMother(Node r){
-        if (r == null){
-            System.out.println( "null" );
-        }
-        else{
-            if(r.left == null){
-                System.out.println("null");
-            }else {
-                if(r.left.left == null){
-                    System.out.println("null");
-                }
-                else {
-                    System.out.println(r.left.left.data);
-                }
-            }
-        }
-
-    }
-
     public Node buscar(Node nodo, String str) {
         if(nodo == null)
             return null;
