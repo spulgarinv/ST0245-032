@@ -15,9 +15,9 @@ public class Color {
             DigraphAM g = new DigraphAM(nod);
             int arcos = sc.nextInt();
             for (int i = 0; i < arcos; i++) {
-                int n1 = sc.nextInt();
-                int n2 = sc.nextInt();
-                g.addArc(n1, n2, nod);
+                int arc1 = sc.nextInt();
+                int arc2 = sc.nextInt();
+                g.addArc(arc1, arc2, nod);
             }
             System.out.println(isBicolorable(g));
             nod = sc.nextInt();
